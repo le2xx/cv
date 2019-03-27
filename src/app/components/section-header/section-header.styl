@@ -1,49 +1,27 @@
 .section-header
-  display block
+  display flex
+  align-items center
 
   &__icon
-    display inline-block
+    margin-right 10px
     width 78px
+    min-width 78px
     height 78px
-    vertical-align middle
 
-    &_profile
-      background url('/assets/images/profile.png') no-repeat
-      background-size contain
-
-    &_contact
-      background url('/assets/images/comtact.png') no-repeat
-      background-size contain
-
-    &_education
-      background url('/assets/images/education.png') no-repeat
-      background-size contain
-
-    &_experience
-      background url('/assets/images/experience.png') no-repeat
-      background-size contain
-
-    &_skills
-      background url('/assets/images/skills.png') no-repeat
-      background-size contain
-
-    &_software
-      background url('/assets/images/software.png') no-repeat
-      background-size contain
+    for n in (profile contact education experience skills software)
+      &_{n}
+        background url('/assets/images/' + n + '.png') no-repeat
+        background-size contain
 
   &__title
-    display inline
-    width 150px
+    margin-right 10px
     height 29px
-    font(41, $base-title, false, 41, 700)
+    font(41, $base-title, false, 31, 700)
     font-family 'MyriadPro'
     text-transform uppercase
-    vertical-align middle
 
   &__line
-    display inline-block
-    width 169px
+    width 500px
+    min-width 0
     height 6px
-    vertical-align middle
     background-color #3d6cb0
-
