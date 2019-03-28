@@ -1,0 +1,40 @@
+include ../section-header/section-header
+include ../edu-work-item/edu-work-item
+
+-
+  const experience = [
+    {
+      degree: 'company name',
+      period: 'Feb 2011 - Jun 2014',
+      institution_name: 'your job here',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ' +
+      'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ' +
+      'Donec quam felis, ultricies nec, pellentesque.',
+      type: 'work'
+    },
+    {
+      degree: 'company name',
+      period: 'Feb 2011 - Jun 2014',
+      institution_name: 'your job here',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ' +
+      'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ' +
+      'Donec quam felis, ultricies nec, pellentesque.',
+      type: 'work'
+    },
+    {
+      degree: 'company name',
+      period: 'Feb 2011 - Jun 2014',
+      institution_name: 'your job here',
+      text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ' +
+      'Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ' +
+      'Donec quam felis, ultricies nec, pellentesque.',
+      type: 'work'
+    }
+  ]
+
+.experience
+  +section-header('experience')
+  ul.experience__list
+    each el in experience
+      li.experience__list-item
+        +edu-work-item(el.degree, el.period, el.institution_name, el.text, el.type)
