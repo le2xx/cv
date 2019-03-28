@@ -44,7 +44,7 @@ class Templates {
   }
 
   get styl() {
-    return `.${this.name}\n  display: block\n`;
+    return `.${this.name}\n  display block\n`;
   }
 
   get js() {
