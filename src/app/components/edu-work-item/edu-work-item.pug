@@ -1,4 +1,4 @@
-mixin edu-work-item(degree, period, institution_name, text, type='edu')
+mixin edu-work-item(degree, period, institution_name, text, type= "edu")
   .edu-work-item
     div(class=(type === 'edu' ? 'edu-work-item__degree' : 'edu-work-item__degree edu-work-item__degree_work'))= degree
     .edu-work-item__period= '// ' + period

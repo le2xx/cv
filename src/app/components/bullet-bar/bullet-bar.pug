@@ -1,0 +1,10 @@
+mixin bullet-bar(title, bullets, percent)
+  -
+    let n = 0
+    const progress = ~~(bullets * percent / 100)
+
+  .bullet-bar
+    h3.bullet-bar__title= title
+    .bullet-bar__bullets
+      while n++ < bullets
+        div(class=(n > progress ? "bullet-bar__bullet" : "bullet-bar__bullet bullet-bar__bullet_progress"))
