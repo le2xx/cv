@@ -1,0 +1,37 @@
+include ../section-header/section-header
+include ../line-bar/line-bar
+
+-
+  const list = [
+    {
+      name: 'photoshop',
+      progress: 91
+    },
+    {
+      name: 'dreamweawer',
+      progress: 82
+    },
+    {
+      name: 'illustrator',
+      progress: 70.5
+    },
+    {
+      name: 'after effects',
+      progress: 60.8
+    },
+    {
+      name: 'indesign',
+      progress: 56
+    },
+    {
+      name: 'html&css3',
+      progress: 90
+    }
+  ]
+
+.software
+  +section-header('software')
+  ul.software__list
+    each el in list
+      li.software__list-item
+        +line-bar(el.name, el.progress)

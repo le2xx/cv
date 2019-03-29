@@ -1,0 +1,5 @@
+mixin line-bar(title, progress)
+  .line-bar
+    h3.line-bar__title= title
+    .line-bar__body
+      .line-bar__bar(style={width: progress + '%'})
