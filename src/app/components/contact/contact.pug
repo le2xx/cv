@@ -1,0 +1,20 @@
+include ../section-header/section-header
+
+-
+  const contact = {
+    'address': 'Main Street, City.',
+    'e-mail': 'contact@domain.com',
+    'phone': '555-555-555',
+    'website': 'www.yourweb.com'
+  }
+
+  const keys = Object.keys(contact)
+  console.log(keys)
+
+.contact
+  +section-header('contact')
+  table.contact__table
+    each key in keys
+      tr.contact__string
+        td.contact__key= key
+        td.contact__value= contact[key]
