@@ -1,12 +1,7 @@
-# Frontend Starter Kit
+# CV
 
 ![Frontend Starter Kit](https://github.com/le2xx/frontend-starter-kit/raw/master/src/assets/images/gear.png)
   
-## Description
-
-This is a startup project template for developing a web interface. There is no jQuery in it, only Vanilla JS,
-only hardcore! If you need jQuery, then you can add it separately as bootstrap and other modules. This template
-includes a number of useful modules in my opinion that automate part of the work.
 
 ## Plugins
 
@@ -36,8 +31,8 @@ includes a number of useful modules in my opinion that automate part of the work
 ### Clone repository
 
 ```
-git clone https://github.com/le2xx/frontend-starter-kit.git new-project
-cd new-project
+git clone https://github.com/le2xx/cv.git
+cd cv
 ```
 
 ### Install modules
