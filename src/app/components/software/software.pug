@@ -32,6 +32,6 @@ include ../line-bar/line-bar
 .software
   +section-header('software')
   ul.software__list
-    each el in list
-      li.software__list-item
+    each el, index in list
+      li(class=(index % 2 === 0 ? 'software__list-item' : 'software__list-item software__list-item_even'))
         +line-bar(el.name, el.progress)

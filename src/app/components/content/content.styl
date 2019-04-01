@@ -1,2 +1,26 @@
 .content
-  display: block
+  margin 76px 0
+  padding 5px
+  display flex
+  justify-content center
+
+  &__left
+    //border solid 1px greenyellow
+    margin-right 78px
+    width 414px
+    min-width 300px
+
+  &__right
+    //border solid 1px deeppink
+    width 632px
+    min-width 300px
+
+@media screen and (max-width 768px)
+  .content
+    flex-wrap wrap
+    margin 25px 0
+
+    &__left
+    &__right
+      margin 0
+      width 100%
