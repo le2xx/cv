@@ -51,9 +51,6 @@ module.exports = {
           },
           {
             loader: 'stylus-loader',
-            options: {
-              sourceMap: true,
-            }
           }
         ]
       },
@@ -71,8 +68,8 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: '/assets/fonts/',
-              publicPath: '/assets/fonts/'
+              outputPath: 'assets/fonts/',
+              publicPath: 'assets/fonts/'
             }
           }
         ]
@@ -84,8 +81,8 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: '/assets/images/',
-              publicPath: '/assets/images/'
+              outputPath: 'assets/images/',
+              publicPath: 'assets/images/'
             }
           }
         ]
