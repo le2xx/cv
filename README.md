@@ -1,6 +1,8 @@
 # CV
 
-![Frontend Starter Kit](https://github.com/le2xx/frontend-starter-kit/raw/master/src/assets/images/gear.png)
+## Demo [https://le2xx.github.io/cv/](https://le2xx.github.io/cv/)
+
+[Frontend Starter Kit](https://github.com/le2xx/frontend-starter-kit/raw/master/src/assets/images/gear.png)
   
 
 ## Plugins
